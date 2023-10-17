@@ -513,8 +513,7 @@ begin
       GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPIGetInitLanguagesAsString{$IFDEF FPC}){$ENDIF}, 'TessBaseAPIGetInitLanguagesAsString');
       GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPIGetLoadedLanguagesAsVector{$IFDEF FPC}){$ENDIF}, 'TessBaseAPIGetLoadedLanguagesAsVector');
       GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPIGetAvailableLanguagesAsVector{$IFDEF FPC}){$ENDIF}, 'TessBaseAPIGetAvailableLanguagesAsVector');
-      GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPIInitLangMod{$IFDEF FPC}){$ENDIF}, 'TessBaseAPIInitLangMod');
-      GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPIInitForAnalysePage{$IFDEF FPC}){$ENDIF}, 'TessBaseAPIInitForAnalysePage');
+	  GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPIInitForAnalysePage{$IFDEF FPC}){$ENDIF}, 'TessBaseAPIInitForAnalysePage');
       GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPIReadConfigFile{$IFDEF FPC}){$ENDIF}, 'TessBaseAPIReadConfigFile');
       GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPIReadDebugConfigFile{$IFDEF FPC}){$ENDIF}, 'TessBaseAPIReadDebugConfigFile');
       GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPISetPageSegMode{$IFDEF FPC}){$ENDIF}, 'TessBaseAPISetPageSegMode');
@@ -537,7 +536,6 @@ begin
       GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPIGetThresholdedImageScaleFactor{$IFDEF FPC}){$ENDIF}, 'TessBaseAPIGetThresholdedImageScaleFactor');
       GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPIAnalyseLayout{$IFDEF FPC}){$ENDIF}, 'TessBaseAPIAnalyseLayout');
       GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPIRecognize{$IFDEF FPC}){$ENDIF}, 'TessBaseAPIRecognize');
-      GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPIRecognizeForChopTest{$IFDEF FPC}){$ENDIF}, 'TessBaseAPIRecognizeForChopTest');
       GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPIProcessPages{$IFDEF FPC}){$ENDIF}, 'TessBaseAPIProcessPages');
       GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPIProcessPage{$IFDEF FPC}){$ENDIF}, 'TessBaseAPIProcessPage');
       GetTesseractProcAddress({$IFNDEF FPC}@{$ELSE}Pointer({$ENDIF}TessBaseAPIGetIterator{$IFDEF FPC}){$ENDIF}, 'TessBaseAPIGetIterator');

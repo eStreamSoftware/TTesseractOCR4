@@ -30,15 +30,15 @@ type
   PUTF8Char = PAnsiChar;
 {$ENDIF}
 
-{$DEFINE USE_CPPAN_BINARIES}
+{.$DEFINE USE_CPPAN_BINARIES}
 
 const
   {$IFDEF USE_CPPAN_BINARIES}
   libleptonica = {$IFDEF Linux}'libpvt.cppan.demo.danbloomberg.leptonica-1.76.0.so'{$ELSE}'pvt.cppan.demo.danbloomberg.leptonica-1.76.0.dll'{$ENDIF};
   libtesseract = {$IFDEF Linux}'libpvt.cppan.demo.google.tesseract.libtesseract-master.so'{$ELSE}'pvt.cppan.demo.google.tesseract.libtesseract-master.dll'{$ENDIF};
   {$ELSE}
-  libleptonica = {$IFDEF Linux}'liblept.so.5'{$ELSE}'liblept-5.dll'{$ENDIF};
-  libtesseract = {$IFDEF Linux}'libtesseract.so.4'{$ELSE}'libtesseract-4.dll'{$ENDIF};
+  libleptonica = {$IFDEF Linux}'liblept.so.5'{$ELSE}'leptonica-1.83.1.dll'{$ENDIF};
+  libtesseract = {$IFDEF Linux}'libtesseract.so.4'{$ELSE}'tesseract53.dll'{$ENDIF};
   {$ENDIF}
 
 implementation
